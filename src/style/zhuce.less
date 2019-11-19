@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+// 导航开始
+.nav{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+     > div {
+        float: left;
+        width: 40px;
+        padding: 10px;
+    }
+    > ul{
+        margin: 0;
+        padding-left: 260px;
+        float: left;
+        text-align: center;
+        .list1> a > span{
+            border-radius: 10px;
+            border: 1px solid #4d4d4d;
+            font-size: 10px;
+            padding: 1px;
+
+            }
+            >li{
+                height: 60px;
+                padding: 0 21px;
+                float: left;
+                line-height: 60px;
+                >a{
+                   color: #000052;
+                   text-decoration: none;
+                } 
+                .nav-li{
+                   position: absolute;
+                   left: 0px;
+                   height: 150px;
+                   width: 1680px;
+                   background: white;
+                   display: none;
+                   border-top: 1px solid #ccc;
+                   border-bottom: 1px solid #ccc;
+                   z-index: 999;
+
+                .menu1{
+                    width: 800px;
+                    margin: auto;
+                    background: white;
+                     >li{
+                        padding: 0 30px;
+                       float: left;
+                       line-height: 160px;
+                       >span{
+                           font-size: 22px;
+                        //    display: block;
+                       }
+                       a{
+                           color: #000;
+                           text-decoration: none;
+                       }
+                    }
+                } 
+            }
+        }
+        .list1:hover {
+            border-bottom: 3px solid red;   
+        }
+        .list1:hover .nav-li{
+            display: block;
+        }
+
+        }
+        .span1{
+            float: right;
+            width: 200px;
+            >span{
+                // display: inline-block;
+                float: left;
+                line-height: 45px;
+                font-size: 26px;
+                padding: 0 10px;
+                >ul{
+                    background: #fff;
+                    display: none;
+                }
+                .ul-text{
+                    width: 280px;
+                    height: 250px;
+                    position: absolute;
+                    top: 60px;
+                    right: 250px;
+                    padding: 20px;
+                    li{
+                        // padding: 0 20px;
+                        border-bottom: 1px solid #ccc;
+                        a{
+                            text-decoration: none;
+                            font-size: 14px;
+                            color: #9999a6;
+                        }
+                    }
+                }
+                .ul-shop{
+                    width: 400px;
+                    height: 200px;
+                    position: absolute;
+                    top: 60px;
+                    right: 150px;
+                    padding: 20px;
+                    >p{
+                        font-size: 16px;
+                    }
+                    button{
+                        width: 360px;
+                        position: absolute;
+                        bottom: 10px;
+                        background: #eb0028;
+                        color: white;
+                        font-size: 16px;
+                        border: none;
+                    }
+                }
+                .ul-input{
+                    width: 600px;
+                    height: 60px;
+                    background: paleturquoise;
+                    position: absolute;
+                    top: -60px;
+                    left: 400px;
+                    z-index: 9999;
+                    // display: block;
+                }
+
+             }
+                span:hover{
+                    border-bottom: 3px solid red;
+                }
+                span:hover .ul-text{
+                    display: block;
+                }
+                span:hover .ul-shop{
+                    display: block;
+                }
+                span:hover .ul-input{
+                    display: block;
+                }
+                a:hover {
+                    color: #191020;
+                }
+        }
+
+    }
+
+    
+// 注册
+.main{
+    width: 100%;
+    background: #f9f9f9;
+    form{
+        width: 350px;
+        // height: 500px;
+        margin: 0 auto;
+        padding: 50px 20px 100px;
+        // background: papayawhip;
+        text-align: center;
+        legend{
+            border: none;
+        }
+        >div{
+            width: 310px;
+            height: 40px;
+        }
+        .loc{
+            // width: 310px;
+            // height: 40px;
+            background: #fff;
+            border: 1px solid #ccc;
+           
+            .flag{
+                width: 40px;
+                height: 40px;
+                float: left;
+                z-index: -1;
+                
+                >img{
+                    margin:12px 8px;
+                    width: 20px;
+                    // height: 20px;
+                }
+            }
+            
+            .state{
+                height: 40px;
+                width: 268px;
+                float: left;
+                background: #eeeeee;
+                position: relative;
+                >span{
+                    position: relative;
+                    left: -100px;
+                    line-height: 40px;
+                    color: black;
+                    font-size: 16px;
+                }
+            }
+        }
+        .text1{
+            float: left;
+            font-size: 12px;
+        }
+        .phone{
+            // width: 310px;
+            // height: 40px;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin-top: 40px;
+            position: relative;
+            .num{
+                height: 40px;
+                width: 40px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                line-height: 40px;
+                font-size: 16px;
+                border-right: 1px solid #e5e5e5;
+                color: #828282;
+            }
+            .phone-num{
+                width: 243px;
+                height: 28px;
+                float: right;
+                outline: none;
+                margin: 6px 10px;
+                border: none;
+            }
+        }
+        .verify{
+            width: 310px;
+            height: 32px;
+            margin-top: 30px;
+            background:#e8e8e8;
+            line-height: 32px;
+        }
+        .forzen{
+            margin: 20px 0;
+        }
+        .text2{
+            padding: 0 20px;
+            color: #666666;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        .field{
+            margin-bottom: 15px;
+            .sub{
+                width: 100%;
+                height: 100%;
+                background: #eb0028;
+                color: white;
+                border: none;
+               
+            }
+        }
+        
+
+
+    }
+}
+       
+
+
+// 底部
+#footer{
+    z-index: 99;
+    background-color: #fcfcfc;
+    // border-top: 1px solid rgba(0,0,0,.1);
+    >.container{
+        .nav-bread{
+            margin: 16px 20px 0px;
+            .home{
+                >a{
+                    color: #000;
+                    text-decoration: none;
+                    padding: 3px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .footer-nav{
+            margin: 10px 0 0px 19px;
+            padding: 20px 15px 20px 0;
+            .list1{
+                float: left;
+                padding-right: 140px;
+                >p{
+                    margin-top: 20px;
+                    color: #191020;
+                    font-size: 18px;
+                }
+                >li{
+                    padding: 8px 0;
+                    >a{
+                        color: #868282;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .right{
+               padding-top: 20px;
+               float: right;
+
+               >ul{
+                   float: right;
+                   a{
+                    display: block;
+                   padding: 10px;
+                   text-decoration: none;
+                   }
+                   .text1{
+                       border: 1px solid black;
+                       width: 120px;
+                       height: 40px;
+                       color: #101920;
+                       text-align: center;
+                       margin-bottom: 10px;
+                   }
+                   p{
+                    color: #999;
+                    font-size: 12px;
+                    // transition-property: all 1s ease;
+                    
+                   }
+                  
+               }
+            }
+
+        }
+    }
+    .bottom{
+        height: 28px;
+        border-bottom: 1px solid #e2e2e2;
+        // margin-bottom: 5px;
+        >.p1{
+             display: inline-block;
+        }
+        >.p2{
+           display: inline-block;
+           float: right;  
+        }
+    }
+    .bottom-nav{
+        height: 30px;
+        margin-top: 10px;
+        >.p3{
+            float: left;
+            // margin-top: 10px;
+            font-size: 12px;
+        }
+        >ul{
+            float: right;
+            // margin-top: 10px;
+            margin-left: 200px;
+            >li{
+                float: left;
+
+                a{
+                    text-decoration: none;
+                    color: #828282;
+                    border-right: 1px solid #e2e2e2;
+                    padding:0 10px;
+                    font-size: 12px;
+                   
+                }
+            }
+        }
+    }
+    .bottom-con{
+        margin-top: 10px;
+        height: 40px;
+        >div{
+            >.p4{
+                display: inline-block;
+                float: left;
+                // line-height: 40px;
+                font-size: 12px;
+            }
+            >.p5{
+                display: inline-block;
+                float: right;
+            }
+        }
+    }
+    .p5{
+        height: 30px;
+        float: left;
+        display: block;
+        margin-bottom: 30px;
+        color: #828282;
+        font-size: 12px;
+    }   
+}
+
+
+

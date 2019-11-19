@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.nav {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+.nav > div {
+  float: left;
+  width: 40px;
+  padding: 10px;
+}
+.nav > ul {
+  margin: 0;
+  padding-left: 260px;
+  float: left;
+  text-align: center;
+}
+.nav > ul .list1 > a > span {
+  border-radius: 10px;
+  border: 1px solid #4d4d4d;
+  font-size: 10px;
+  padding: 1px;
+}
+.nav > ul > li {
+  height: 60px;
+  padding: 0 21px;
+  float: left;
+  line-height: 60px;
+}
+.nav > ul > li > a {
+  color: #000052;
+  text-decoration: none;
+}
+.nav > ul > li .nav-li {
+  position: absolute;
+  left: 0px;
+  height: 150px;
+  width: 1680px;
+  background: white;
+  display: none;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  z-index: 999;
+}
+.nav > ul > li .nav-li .menu1 {
+  width: 800px;
+  margin: auto;
+  background: white;
+}
+.nav > ul > li .nav-li .menu1 > li {
+  padding: 0 30px;
+  float: left;
+  line-height: 160px;
+}
+.nav > ul > li .nav-li .menu1 > li > span {
+  font-size: 22px;
+}
+.nav > ul > li .nav-li .menu1 > li a {
+  color: #000;
+  text-decoration: none;
+}
+.nav > ul .list1:hover {
+  border-bottom: 3px solid red;
+}
+.nav > ul .list1:hover .nav-li {
+  display: block;
+}
+.nav .span1 {
+  float: right;
+  width: 200px;
+}
+.nav .span1 > span {
+  float: left;
+  line-height: 45px;
+  font-size: 26px;
+  padding: 0 10px;
+}
+.nav .span1 > span > ul {
+  background: #fff;
+  display: none;
+}
+.nav .span1 > span .ul-text {
+  width: 280px;
+  height: 250px;
+  position: absolute;
+  top: 60px;
+  right: 250px;
+  padding: 20px;
+}
+.nav .span1 > span .ul-text li {
+  border-bottom: 1px solid #ccc;
+}
+.nav .span1 > span .ul-text li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #9999a6;
+}
+.nav .span1 > span .ul-shop {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 60px;
+  right: 150px;
+  padding: 20px;
+}
+.nav .span1 > span .ul-shop > p {
+  font-size: 16px;
+}
+.nav .span1 > span .ul-shop button {
+  width: 360px;
+  position: absolute;
+  bottom: 10px;
+  background: #eb0028;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+.nav .span1 > span .ul-input {
+  width: 600px;
+  height: 60px;
+  background: paleturquoise;
+  position: absolute;
+  top: -60px;
+  left: 400px;
+  z-index: 9999;
+}
+.nav .span1 span:hover {
+  border-bottom: 3px solid red;
+}
+.nav .span1 span:hover .ul-text {
+  display: block;
+}
+.nav .span1 span:hover .ul-shop {
+  display: block;
+}
+.nav .span1 span:hover .ul-input {
+  display: block;
+}
+.nav .span1 a:hover {
+  color: #191020;
+}
+.main {
+  width: 100%;
+  background: #f9f9f9;
+}
+.main form {
+  width: 350px;
+  margin: 0 auto;
+  padding: 50px 20px 100px;
+  text-align: center;
+}
+.main form legend {
+  border: none;
+}
+.main form > div {
+  width: 310px;
+  height: 40px;
+}
+.main form .loc {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+.main form .loc .flag {
+  width: 40px;
+  height: 40px;
+  float: left;
+  z-index: -1;
+}
+.main form .loc .flag > img {
+  margin: 12px 8px;
+  width: 20px;
+}
+.main form .loc .state {
+  height: 40px;
+  width: 268px;
+  float: left;
+  background: #eeeeee;
+  position: relative;
+}
+.main form .loc .state > span {
+  position: relative;
+  left: -100px;
+  line-height: 40px;
+  color: black;
+  font-size: 16px;
+}
+.main form .text1 {
+  float: left;
+  font-size: 12px;
+}
+.main form .phone {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-top: 40px;
+  position: relative;
+}
+.main form .phone .num {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 40px;
+  font-size: 16px;
+  border-right: 1px solid #e5e5e5;
+  color: #828282;
+}
+.main form .phone .phone-num {
+  width: 243px;
+  height: 28px;
+  float: right;
+  outline: none;
+  margin: 6px 10px;
+  border: none;
+}
+.main form .verify {
+  width: 310px;
+  height: 32px;
+  margin-top: 30px;
+  background: #e8e8e8;
+  line-height: 32px;
+}
+.main form .forzen {
+  margin: 20px 0;
+}
+.main form .text2 {
+  padding: 0 20px;
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.main form .field {
+  margin-bottom: 15px;
+}
+.main form .field .sub {
+  width: 100%;
+  height: 100%;
+  background: #eb0028;
+  color: white;
+  border: none;
+}
+#footer {
+  z-index: 99;
+  background-color: #fcfcfc;
+}
+#footer > .container .nav-bread {
+  margin: 16px 20px 0px;
+}
+#footer > .container .nav-bread .home > a {
+  color: #000;
+  text-decoration: none;
+  padding: 3px;
+  font-size: 16px;
+}
+#footer > .container .footer-nav {
+  margin: 10px 0 0px 19px;
+  padding: 20px 15px 20px 0;
+}
+#footer > .container .footer-nav .list1 {
+  float: left;
+  padding-right: 140px;
+}
+#footer > .container .footer-nav .list1 > p {
+  margin-top: 20px;
+  color: #191020;
+  font-size: 18px;
+}
+#footer > .container .footer-nav .list1 > li {
+  padding: 8px 0;
+}
+#footer > .container .footer-nav .list1 > li > a {
+  color: #868282;
+  text-decoration: none;
+}
+#footer > .container .footer-nav .right {
+  padding-top: 20px;
+  float: right;
+}
+#footer > .container .footer-nav .right > ul {
+  float: right;
+}
+#footer > .container .footer-nav .right > ul a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+#footer > .container .footer-nav .right > ul .text1 {
+  border: 1px solid black;
+  width: 120px;
+  height: 40px;
+  color: #101920;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#footer > .container .footer-nav .right > ul p {
+  color: #999;
+  font-size: 12px;
+}
+#footer .bottom {
+  height: 28px;
+  border-bottom: 1px solid #e2e2e2;
+}
+#footer .bottom > .p1 {
+  display: inline-block;
+}
+#footer .bottom > .p2 {
+  display: inline-block;
+  float: right;
+}
+#footer .bottom-nav {
+  height: 30px;
+  margin-top: 10px;
+}
+#footer .bottom-nav > .p3 {
+  float: left;
+  font-size: 12px;
+}
+#footer .bottom-nav > ul {
+  float: right;
+  margin-left: 200px;
+}
+#footer .bottom-nav > ul > li {
+  float: left;
+}
+#footer .bottom-nav > ul > li a {
+  text-decoration: none;
+  color: #828282;
+  border-right: 1px solid #e2e2e2;
+  padding: 0 10px;
+  font-size: 12px;
+}
+#footer .bottom-con {
+  margin-top: 10px;
+  height: 40px;
+}
+#footer .bottom-con > div > .p4 {
+  display: inline-block;
+  float: left;
+  font-size: 12px;
+}
+#footer .bottom-con > div > .p5 {
+  display: inline-block;
+  float: right;
+}
+#footer .p5 {
+  height: 30px;
+  float: left;
+  display: block;
+  margin-bottom: 30px;
+  color: #828282;
+  font-size: 12px;
+}
