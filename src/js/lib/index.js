@@ -12,10 +12,10 @@ define(['jquery'], function($) {
                     let temp = '';
                     res.forEach(elm => {
                         let pic = JSON.parse(elm.pic);
-                        console.log(pic);
+                        // console.log(`${baseUrl}/src/html/shop.html?id=${elm.id}`);
                         temp += `
                             <li class="item">
-                                <a href="${baseUrl}/src/html/index.html?id=${elm.id}">
+                                <a href="${baseUrl}/src/html/shop.html?id=${elm.id}">
                                      <span class="p-discount">
                                      ${elm.discount}
                                      </span>
@@ -26,7 +26,7 @@ define(['jquery'], function($) {
                                         ${elm.title}
                                     </div>
                                     <div class="p-price">
-                                        <del>最低价99</del>
+                                        <del>最低价￥${elm.cost}</del>
                                         <span class="yuan">￥</span>${elm.price}
                                     </div>  
                                 </a>

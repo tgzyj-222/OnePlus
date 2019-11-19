@@ -38,7 +38,7 @@ li {
   line-height: 60px;
 }
 .nav > ul > li > a {
-  color: #000052;
+  color: #000;
   text-decoration: none;
 }
 .nav > ul > li .nav-li {
@@ -125,6 +125,7 @@ li {
 }
 .nav .span1 > span .ul-shop button {
   width: 360px;
+  height: 40px;
   position: absolute;
   bottom: 10px;
   background: #eb0028;
@@ -162,26 +163,196 @@ li {
 }
 .main {
   width: 100%;
-  height: 1200px;
+  height: 1000px;
   background: #f2f2f2;
 }
 .main .count {
   width: 1200px;
   height: 1000px;
-  background: blanchedalmond;
-  margin: 0;
-}
-.main .count .count-text {
-  width: 100%;
   margin: 0 auto;
 }
-.main .count .count-text .left-box {
+.main .count .b-left {
   width: 600px;
-  height: 100%;
-  background: white;
+  height: 800px;
   float: left;
+  position: absolute;
+  left: 160px;
 }
-.main .count .count-text .right-box {
+.main .count .b-left .show-img {
+  height: 480px;
+  width: 480px;
+  margin: 60px;
+}
+.main .count .b-left .show-img > img {
+  width: 480px;
+}
+.main .count .b-left .s-img {
+  width: 600px;
+  height: 100px;
+  padding: 0 0 20px;
+  text-align: center;
+}
+.main .count .b-left .s-img > img {
+  width: 58px;
+  height: 58px;
+  margin: 0 10px;
+  border: 1px solid #9999a6;
+}
+.main .count .b-left .s-img img:hover {
+  background: white;
+}
+.main .count .b-right {
+  width: 600px;
+  height: 800px;
+  float: right;
+  margin: 0;
+  padding: 108px 0 0;
+}
+.main .count .b-right .p-title {
+  width: 600px;
+  color: #101920;
+  font-size: 28px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #9999a6;
+  margin-bottom: 40px;
+}
+.main .count .b-right .p-color {
+  width: 600px;
+  height: 112px;
+  position: relative;
+  color: #828282;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.main .count .b-right .p-color .p-color-1 {
+  width: 288px;
+  height: 68px;
   float: left;
-  padding-top: 18%;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  border: 1px solid #ccc;
+  background: white;
+  margin-top: 15px;
+}
+.main .count .b-right .p-color .p-color-1 .color-1 {
+  width: 20px;
+  height: 20px;
+  line-height: 68px;
+  border-radius: 50%;
+}
+.main .count .b-right .p-color .p-color-2 {
+  width: 288px;
+  height: 68px;
+  float: left;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 320px;
+  background: white;
+  margin-top: 15px;
+}
+.main .count .b-right .p-color .p-color-2 .color-1 {
+  width: 20px;
+  height: 20px;
+  line-height: 68px;
+  background: black;
+  border-radius: 50%;
+}
+.main .count .b-right .p-color .p-color-2 .color-2 {
+  width: 68px;
+  height: 20px;
+}
+.main .count .p-price {
+  width: 600px;
+  height: 33.6px;
+  margin-bottom: 30px;
+}
+.main .count .p-price del {
+  font-size: 16px;
+}
+.main .count .p-price .yuan {
+  font-size: 28px;
+}
+.main .count .p-show {
+  width: 200px;
+  height: 50px;
+  background: #eb0028;
+  color: #fff;
+  border: none;
+  padding: 0 50px;
+  font-size: 17px;
+  margin: 10px;
+  line-height: 50px;
+  transition: all 2s ease;
+}
+.main .count .num {
+  display: block;
+  width: 600px;
+  height: 30px;
+  color: black;
+  position: absolute;
+  left: 520px;
+}
+.main .count .p-show:hover {
+  background: #ad0723;
+}
+.main .count .con-text {
+  position: absolute;
+  left: 777px;
+  top: 600px;
+}
+.main .count .con-text .guarantee {
+  width: 600px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.main .count .con-text .guarantee .p1 {
+  width: 64px;
+  height: 24px;
+  padding: 0 0 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.main .count .con-text .guarantee .span-1 {
+  width: 120px;
+  height: 50px;
+  padding: 0 0 20px;
+  color: #828282;
+  font-size: 14px;
+}
+.main .count .con-text .guarantee2 {
+  width: 600px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.main .count .con-text .guarantee2 .p2 {
+  width: 64px;
+  height: 24px;
+  padding: 0 0 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.main .count .con-text .guarantee2 .span-2 {
+  width: 120px;
+  height: 50px;
+  padding: 0 0 20px;
+  color: #828282;
+  font-size: 14px;
+}
+.main .count .con-text .guarantee3 {
+  width: 600px;
+  height: 89px;
+  margin-bottom: 20px;
+}
+.main .count .con-text .guarantee3 ul {
+  width: 400px;
+}
+.main .count .con-text .guarantee3 ul > li {
+  margin-top: 20px;
+  width: 25%;
+  height: 30px;
+  float: left;
 }

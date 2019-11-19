@@ -1,9 +1,10 @@
-let baseUrl = "http://localhost:8080/1910/OnePlus";
+let baseUrl = "http://127.0.0.1:8080/1910/OnePlus";
 
 define(['jquery', 'cookie'], function($, cookie) {
     return {
         render: function(callback) {
             let id = location.search.split('=')[1];
+            console.log(id)
             $.ajax({
                 url: `${baseUrl}/lib/getitem.php`,
                 type: 'get',
@@ -14,21 +15,42 @@ define(['jquery', 'cookie'], function($, cookie) {
                 success: function(res) {
                     let pic = JSON.parse(res.pic);
                     let tempstr = `
-                        <h1>${res.title}</h1>
-                        <div>
-                            <img src="${baseUrl}/src/${pic[1].src}" alt="${pic[1].title}">
-                        </div>
-                        <div>
-                            <span class="yuan">￥</span>${res.price}
-                        </div>
-                        <div>
-                            <span>${res.num}</span>
-                        </div>
-                        <input class="num" type="number" min="1" max="${res.num}" value="1">
-                        <input type="button" value="加入购物车" class="add">
-                        <div>${res.details}</div>
-                    `;
-                    $('body').append(tempstr);
+                                <div class="b-left">
+                                    <div class="show-img">
+                                        
+                                        <img src="${baseUrl}/${pic[1].src}" alt="${pic[1].title}">
+                                    </div>
+                                    <ul class="s-img">
+                                        <img src="${baseUrl}/${pic[1].src}" alt="${pic[3].title}">
+                                        <img src="${baseUrl}/${pic[2].src}" alt="${pic[3].title}">
+                                        <img src="${baseUrl}/${pic[3].src}" alt="${pic[3].title}">
+                                    </ul>
+                                </div>
+                                <div class="b-right">
+                                        <div class="p-title">${res.title}</div>
+                                        <div class="p-color">
+                                                颜色
+                                            <div class="p-color-1">
+                                                <span class="color-1"></span>
+                                                <span class="color-2">${res.color}</span>
+                                             </div>
+                                            <div class="p-color-2">
+                                                <span class="color-1"></span>
+                                                <span class="color-2">${res.color2}</span>
+                                            </div>
+                                        </div>
+                                        <div class="p-price">
+                                            <del>￥${res.cost}</del>
+                                            <span class="yuan">￥${res.price}</span>
+                                        </div>
+                                        
+                                        <button class="p-show">加入购物车</botton>
+                                        <span class="num">库存：${res.num}</span>
+                                      
+                                </div>
+                                `;
+                    // <input class="num" type="number" min="1" max="${res.num}" value="1"></input>
+                    $('.count').append(tempstr);
                     callback && callback(res.id, res.price);
                 }
             })
