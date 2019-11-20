@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="../font/font_8k4nuk1su5e/iconfont.css">
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/login.css">
-
-    <script src="../../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../js/lib/login.js"></script>
+    <script src="../js/require.js" data-main="../js/main.login.js"></script>
 </head>
 
 <body>
@@ -126,29 +124,23 @@
         <form action="">
             <legend>登陆</legend>
             <div class="field input-mobile-email">
-                <input type="text" placeholder="手机/邮箱/用户名">
+                <input type="text" placeholder="手机/邮箱/用户名" class="phonenum">
             </div>
             <p></p>
             <div class="field">
-                <input type="password" name="" id="" placeholder="密码">
+                <input type="password" autocomplete placeholder="密码" class="passnum">
             </div>
             <p></p>
             <!-- 滑块验证 -->
-            <!-- <div class="field">
-                <input type="text">
-            </div> -->
             <div id="drag">
-                <!-- <label class="hdyzm" for=""><span>请按住滑块，拖动到最右边</span></label> -->
                 <div id="bg"></div>
                 <div id="text" onselectstart="return false;">请拖动滑块解锁</div>
                 <div id="btn">&gt;&gt;</div>
             </div>
 
-
-            <div class="field">
-                <input type="submit" class="sub">
+            <div class="bot-sub">
+                <button class="sub" type="button">登陆</button>
             </div>
-
             <ul>
                 <li>
                     <a href="">短信验证吗登陆</a>

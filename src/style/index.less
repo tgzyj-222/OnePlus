@@ -222,6 +222,75 @@ li{
 //         }
 //     }      
 // }
+.pb-carouselWarp {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    // margin-top: 50px;
+    .pb-carousel {
+        position: relative;
+        height: 100%;
+        li {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            img {
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+              }
+          }
+        .pb-this {
+            display: block;
+            left: 0;
+          }  
+      }
+    .pb-carousel-ind {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style: none;
+        li {
+            float: left;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(126, 115, 115, 0.4);
+            margin: 0 5px;
+            cursor: pointer;
+          }
+          .pb-this {
+            background-color: #ee394b;
+          }
+     }
+     .pb-arrow {
+        position: absolute;
+        top: 50%;
+        margin-top: -33px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .0);
+        cursor: pointer;
+        border: none;
+        outline:none;
+      }
+      .pb-arrow-prev {
+        left: 159px;
+        background: rgba(0, 0, 0, .4) url(../img/arrow-left.png) no-repeat center;
+      }
+      .pb-arrow-next {
+        right: 159px;
+        background: rgba(0, 0, 0, .4) url(../img/arrow-right.png) no-repeat center;
+      }
+}
 
 // 主体开始
 .col{

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../font/font_8k4nuk1su5e/iconfont.css">
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/zhuce.css">
+    <script src="../js/require.js" data-main="../js/main.zhuce.js"></script>
 </head>
 
 <body>
@@ -130,19 +131,28 @@
             <!-- 手机号注册 -->
             <div class="phone">
                 <p class="num">+86</p>
-                <input type="text" class="phone-num" placeholder="手机号">
+                <input type="text" class="phonenum" placeholder="手机号">
+                <p class="unphone"></p>
             </div>
-            <p></p>
+
+            <div id="password">
+                <p class="num2">密码</p>
+                <input type="password" placeholder="请输入密码" class="passnum">
+                <p class="unpass"></p>
+            </div>
+
+
 
             <!-- 验证 -->
-            <div class="verify">
+            <!-- <div class="verify">
                 请按住滑块，拖动到最右边
                 <span></span>
             </div>
 
             <div class="forzen">
 
-            </div>
+            </div> -->
+
             <!-- 注册须知 -->
             <div class="text2">
                 注册OnePuls,即表示你同意OnePils的
@@ -152,7 +162,7 @@
 
             <div class="field">
                 <!-- <input type="submit" class="sub"> -->
-                <button class="sub">创建账号</button>
+                <button type="button" class="sub">创建账号</button>
             </div>
 
             <p class="p1">

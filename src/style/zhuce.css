@@ -203,6 +203,7 @@ li {
   border: 1px solid #ccc;
   margin-top: 40px;
   position: relative;
+  margin-bottom: 20px;
 }
 .main form .phone .num {
   height: 40px;
@@ -215,7 +216,7 @@ li {
   border-right: 1px solid #e5e5e5;
   color: #828282;
 }
-.main form .phone .phone-num {
+.main form .phone .phonenum {
   width: 243px;
   height: 28px;
   float: right;
@@ -223,12 +224,48 @@ li {
   margin: 6px 10px;
   border: none;
 }
-.main form .verify {
+.main form .phone .unphone {
+  float: left;
+  margin: 0;
+}
+.main form #password {
   width: 310px;
-  height: 32px;
+  height: 40px;
   margin-top: 30px;
-  background: #e8e8e8;
-  line-height: 32px;
+  background: white;
+  line-height: 40px;
+  margin: 0 0 50px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+.main form #password .num2 {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 40px;
+  font-size: 16px;
+  border-right: 1px solid #e5e5e5;
+  color: #828282;
+}
+.main form #password > input {
+  width: 243px;
+  height: 28px;
+  float: right;
+  outline: none;
+  margin: 6px 10px;
+  border: none;
+}
+.main form #password .unpass {
+  float: left;
+  margin: 0;
+}
+.main form .red {
+  color: red;
+}
+.main form .green {
+  color: green;
 }
 .main form .forzen {
   margin: 20px 0;

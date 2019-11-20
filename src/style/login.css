@@ -175,7 +175,6 @@ li {
   margin: 20px 0;
   height: 40px;
   width: 310px;
-  background: peru;
 }
 .main form > div input {
   width: 100%;
@@ -185,7 +184,15 @@ li {
   border: 1px solid #e5e5e5;
   outline: none;
 }
-.main form > div .sub {
+.main form .bot-sub {
+  height: 40px;
+  width: 310px;
+  background: #f9f9f9;
+}
+.main form .bot-sub .sub {
+  padding: 0 50px;
+  width: 100%;
+  height: 100%;
   background: #eb0028;
   color: white;
   border: none;

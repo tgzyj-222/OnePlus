@@ -21,9 +21,9 @@ define(['jquery', 'cookie'], function($, cookie) {
                                         <img src="${baseUrl}/${pic[1].src}" alt="${pic[1].title}">
                                     </div>
                                     <ul class="s-img">
-                                        <img src="${baseUrl}/${pic[1].src}" alt="${pic[3].title}">
-                                        <img src="${baseUrl}/${pic[2].src}" alt="${pic[3].title}">
-                                        <img src="${baseUrl}/${pic[3].src}" alt="${pic[3].title}">
+                                        <img src="${baseUrl}/${pic[1].src}" alt="${pic[3].title}" class="min-img active">
+                                        <img src="${baseUrl}/${pic[2].src}" alt="${pic[3].title}" class="min-img">
+                                        <img src="${baseUrl}/${pic[3].src}" alt="${pic[3].title}" class="min-img">
                                     </ul>
                                 </div>
                                 <div class="b-right">
@@ -55,6 +55,11 @@ define(['jquery', 'cookie'], function($, cookie) {
                 }
             })
         },
+
+
+
+
+
         addItem: function(id, price, num) {
             let shop = cookie.get('shop'); // 获取cookie数据 判断是否存在
             // 如果有cookie  修改cookie
@@ -83,3 +88,24 @@ define(['jquery', 'cookie'], function($, cookie) {
         }
     }
 });
+
+
+// 点击切换图片
+// $(function() {
+//     var ione = $(".show-img>img"),
+
+//         itwo = $(".s-img>img"),
+//         tthe = $(".the img");
+
+//     var arr = ["img/1.jpg", "img/2.jpg", "img/3.jpg"];
+
+//     itwo.each(function(i) {
+//         $(this).click(function() {
+//             $(".one img").attr("src", arr[i])
+//             tthe.attr("src", oarr[i])
+//             itwo.removeClass("active")
+//             $(this).addClass("active")
+//         })
+
+//     })
+// })
