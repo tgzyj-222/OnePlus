@@ -233,7 +233,7 @@ li {
 .col > div {
   height: 40px;
   float: left;
-  padding: 8px 34px 8px 16px;
+  padding: 8px 30px 8px 16px;
 }
 .col > div a {
   color: #101920;
@@ -265,7 +265,7 @@ li {
   background: red;
   color: white;
   position: absolute;
-  right: -320px;
+  right: -280px;
   text-align: center;
   font-size: 12px;
 }
@@ -361,6 +361,33 @@ li {
   color: #101920;
   text-align: center;
   margin-bottom: 10px;
+  position: relative;
+}
+#footer > .container .footer-nav .right > ul .text1:after,
+#footer > .container .footer-nav .right > ul .text1:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  z-index: -2;
+}
+#footer > .container .footer-nav .right > ul .text1:hover {
+  z-index: 1;
+  background: transparent;
+}
+#footer > .container .footer-nav .right > ul .text1:before {
+  transition: 0.3s;
+  background: black;
+  z-index: -1;
+}
+#footer > .container .footer-nav .right > ul .text1:hover {
+  color: white;
+}
+#footer > .container .footer-nav .right > ul .text1:hover:after,
+#footer > .container .footer-nav .right > ul .text1:hover:before {
+  width: 120px;
 }
 #footer > .container .footer-nav .right > ul p {
   color: #999;

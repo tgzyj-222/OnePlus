@@ -14,8 +14,11 @@ define(['jquery', 'md5'], function($) {
                         userpass: $.md5($('.passnum').val())
                     },
                     success: function(res) {
-                        alert(res.msg)
-                        location.href = 'http://127.0.0.1:8080/1910/OnePlus/src/html/index.html'
+                        if (res) {
+                            alert('登陆成功')
+                            location.href = 'http://127.0.0.1:8080/1910/OnePlus/src/html/index.html'
+                        }
+
                     }
                 });
             })

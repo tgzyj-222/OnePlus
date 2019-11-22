@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>商品详情</title>
-    <link rel="stylesheet" href="../style/shop.css">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../style/shopcar.css">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../font/font_8k4nuk1su5e/iconfont.css">
-    <script src="../js/require.js" data-main="../js/main.product"></script>
-
+    <script src="../js/require.js" data-main="../js/main.shopcar.js"></script>
 </head>
 
 <body>
-    <!-- 导航开始 -->
+    <!-- 头部 -->
     <div class="container-fluid" style="width: 100%;height: 60px;">
         <div class="nav">
             <div>
@@ -42,7 +42,6 @@
                 <li class="list1"><a href="">7系列</a>
 
                     <div class="nav-li">
-                        <!-- 二级导航 -->
                         <ul class="menu1">
                             <li>
                                 <span class="iconfont">&#xe615;</span>
@@ -54,10 +53,11 @@
                             </li>
                         </ul>
                     </div>
+
+
                 </li>
                 <li class="list1"><a href="./index.html">商城</a>
                     <div class="nav-li">
-                        <!-- 二级导航 -->
                         <ul class="menu1">
                             <li>
                                 <span class="iconfont">&#xe615;</span>
@@ -104,7 +104,7 @@
                 <span class="iconfont">&#xe60e;
                             <ul class="ul-shop">
                                 <p>您的购物车里没有商品</p>
-                                <a href="../html/shopcar.html"><button>去购物</button></a>
+                                <button>去购物</button>
                             </ul>
                         </span>
                 <span class="iconfont">&#xe501;
@@ -118,82 +118,31 @@
     </div>
 
 
-
-    <!-- 商品展示 -->
-
-    <div class="main">
-        <div class="count">
-            <!-- <div class="b-left">
-                <div class="show-img">
-                    <img src="../img/xq-phone1.png" alt="">
-                </div>
-                <ul class="s-img">
-                    <img src="../img/phone7.png" alt="">
-                    <img src="../img/phone2.png" alt="">
-                    <img src="../img/phone3.png" alt="">
-                    <img src="../img/phone4.png" alt="">
-                </ul>
-            </div>
-            <div class="b-right">
-                <div class="p-title">
-                    OnePlus 6T 个性保护壳 芳纶纤维
-                </div>
-                <div class="p-color">
-                    颜色
-                    <div class="p-color-1">
-                        <span class="color-1"></span>
-                        <span class=""></span>
+    <!-- 内容 -->
+    <div class="container-fluid bg-car">
+        <div class="car">
+            <div class="top-head"><span>购物车</span></div>
+            <div class="car-items">
+                <!-- <div class="car-item">
+                    <div class="p-pic">
+                        <img src="" alt="">
                     </div>
-                </div>
-                <div class="p-price">
+                    <div class="item-main">
+                        <div class="p-title"></div>
+                        <p class="p-price"></p>
+                        <input type="number" class="num">
+                        <p class="b-price"></p>
+                        <div class="tu"><span></span></div>
+                    </div>
+                </div> -->
 
-                </div>
 
-                <button class="p-show">加入购物车</button>
-                库存
-             <span class="num"></span>-->
-            <div class="con-text">
-                <div class="guarantee">
-                    <p class="p1">售后政策</p>
-                    <span class="span-1">七天无理由退货</sapn>
-                </div>
-                <div class="guarantee2">
-                    <p class="p2">物流信息</p>
-                    <span class="span-2">全场满99包邮，当天18点之前支付24小时内发货</span>
-                </div>
-                <div class="guarantee3">
-                    <p class="p3">支付方式</p>
-                    <ul>
-                        <li>
-                            <span class="iconfont">&#xe620;</span>QQ
-                        </li>
-                        <li>
-                            <span class="iconfont">&#xe938;</span>微信
-                        </li>
-                        <li>
-                            <span>&#xe64c;</span>银联支付
-                        </li>
-                        <li>
-                            <span class="iconfont">&#xe64c;</span>信用卡
-                        </li>
-                    </ul>
-                </div>
 
             </div>
-
 
         </div>
-    </div>
 
     </div>
-
-    <!-- 底部 -->
-
-
-
-
-
-
 
 </body>
 

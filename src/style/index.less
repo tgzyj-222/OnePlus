@@ -301,7 +301,7 @@ li{
         // line-height: 60px;
         height: 40px;
         float: left;
-        padding: 8px 34px 8px 16px;
+        padding: 8px 30px 8px 16px;
        
        a{
         color: #101920;
@@ -340,7 +340,7 @@ li{
                     color: white;
                     position: absolute;
                     // top: 0px;
-                    right: -320px;
+                    right: -280px;
                     text-align: center;
                     font-size: 12px;
                 }
@@ -446,6 +446,7 @@ li{
                float: right;
 
                >ul{
+                 
                    float: right;
                    a{
                     display: block;
@@ -459,7 +460,40 @@ li{
                        color: #101920;
                        text-align: center;
                        margin-bottom: 10px;
+                       position: relative;
+                       
                    }
+                .text1:after,.text1:before {
+                    content: '';
+                    position: absolute;
+                    left: -1px;
+                    top: 0;
+                    width: 0;
+                    height: 100%;
+                    // background: #00d463;
+                    z-index:-2;
+                    // border-radius: 4px;
+                }
+    
+                .text1:hover{
+                    z-index:1;
+                    background:transparent;
+                }            
+              
+                .text1:before {
+                    transition: .3s;
+                    background: black;
+                    z-index:-1;
+                   
+                }
+                .text1:hover{
+                    color: white;
+                }          
+    
+                .text1:hover:after,.text1:hover:before {
+                    width: 120px;
+                   
+                }
                    p{
                     color: #999;
                     font-size: 12px;

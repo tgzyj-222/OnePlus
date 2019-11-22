@@ -42,9 +42,10 @@ li{
                 } 
                 .nav-li{
                    position: absolute;
+                   top: 60px;
                    left: 0px;
                    height: 150px;
-                   width: 1680px;
+                   width: 100%;
                    background: white;
                    display: none;
                    border-top: 1px solid #ccc;
@@ -82,6 +83,8 @@ li{
         .span1{
             float: right;
             width: 200px;
+            height: 60px;
+            position: relative;
             >span{
                 // display: inline-block;
                 float: left;
@@ -97,8 +100,9 @@ li{
                     height: 250px;
                     position: absolute;
                     top: 60px;
-                    right: 250px;
+                    right: 140px;
                     padding: 20px;
+                    z-index: 999;
                     li{
                         // padding: 0 20px;
                         border-bottom: 1px solid #ccc;
@@ -110,12 +114,13 @@ li{
                     }
                 }
                 .ul-shop{
-                    width: 400px;
+                    width: 380px;
                     height: 200px;
                     position: absolute;
                     top: 60px;
-                    right: 150px;
+                    right: 50px;
                     padding: 20px;
+                    z-index: 999;
                     >p{
                         font-size: 16px;
                     }
@@ -132,12 +137,17 @@ li{
                 .ul-input{
                     width: 600px;
                     height: 60px;
-                    background: paleturquoise;
+                    // background: paleturquoise;
                     position: absolute;
-                    top: -60px;
+                    top: 0px;
                     left: 400px;
                     z-index: 9999;
                     // display: block;
+                    input{
+                        border: none;
+                        height: 30px;
+                        margin-top: 15px;
+                    }
                 }
 
              }
@@ -150,7 +160,7 @@ li{
                 span:hover .ul-shop{
                     display: block;
                 }
-                span:hover .ul-input{
+                span:active .ul-input{
                     display: block;
                 }
                 a:hover {
@@ -159,7 +169,6 @@ li{
         }
 
     }
-
     
 // 注册
 .main{
@@ -325,6 +334,38 @@ li{
                 background: #eb0028;
                 color: white;
                 border: none;
+                position: relative;
+               
+            }
+            .sub:after,.sub:before {
+                content: '';
+                position: absolute;
+                left: 0px;
+                top: 0;
+                width: 0;
+                height: 100%;
+                background: #eb0028;
+                z-index:-2;
+                // border-radius: 4px;
+            }
+
+            .sub:hover{
+                z-index:1;
+                background:transparent;
+            }            
+          
+            .sub:before {
+                transition: .3s;
+                background: rgb(131, 2, 2);
+                z-index:-1;
+               
+            }
+            .sub:hover{
+                color: white;
+            }          
+
+            .sub:hover:after,.sub:hover:before {
+                width: 100%;
                
             }
         }

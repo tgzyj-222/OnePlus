@@ -51,16 +51,13 @@ define(['jquery', 'cookie'], function($, cookie) {
                                 `;
                     // <input class="num" type="number" min="1" max="${res.num}" value="1"></input>
                     $('.count').append(tempstr);
+                    //判断回调
                     callback && callback(res.id, res.price);
                 }
             })
         },
-
-
-
-
-
-        addItem: function(id, price, num) {
+        addItem: function(id, price) {
+            alert(id);
             let shop = cookie.get('shop'); // 获取cookie数据 判断是否存在
             // 如果有cookie  修改cookie
             // 如果有cookie  添加cookie
@@ -68,17 +65,14 @@ define(['jquery', 'cookie'], function($, cookie) {
             let product = {
                 id: id,
                 price: price,
-                num: num
             };
 
             if (shop) {
                 shop = JSON.parse(shop);
-                if (shop.some(elm => elm.id == id)) {
+                if (shop.some(elm => elm.id != id)) {
                     shop.forEach(elm => {
-                        elm.id == id ? elm.num = num : null;
+                        shop.push(product);
                     });
-                } else {
-                    shop.push(product);
                 }
             } else {
                 shop = []; // 购物车没有内容 新建一个购物车

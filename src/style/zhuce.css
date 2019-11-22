@@ -43,9 +43,10 @@ li {
 }
 .nav > ul > li .nav-li {
   position: absolute;
+  top: 60px;
   left: 0px;
   height: 150px;
-  width: 1680px;
+  width: 100%;
   background: white;
   display: none;
   border-top: 1px solid #ccc;
@@ -78,6 +79,8 @@ li {
 .nav .span1 {
   float: right;
   width: 200px;
+  height: 60px;
+  position: relative;
 }
 .nav .span1 > span {
   float: left;
@@ -94,8 +97,9 @@ li {
   height: 250px;
   position: absolute;
   top: 60px;
-  right: 250px;
+  right: 140px;
   padding: 20px;
+  z-index: 999;
 }
 .nav .span1 > span .ul-text li {
   border-bottom: 1px solid #ccc;
@@ -106,12 +110,13 @@ li {
   color: #9999a6;
 }
 .nav .span1 > span .ul-shop {
-  width: 400px;
+  width: 380px;
   height: 200px;
   position: absolute;
   top: 60px;
-  right: 150px;
+  right: 50px;
   padding: 20px;
+  z-index: 999;
 }
 .nav .span1 > span .ul-shop > p {
   font-size: 16px;
@@ -128,11 +133,15 @@ li {
 .nav .span1 > span .ul-input {
   width: 600px;
   height: 60px;
-  background: paleturquoise;
   position: absolute;
-  top: -60px;
+  top: 0px;
   left: 400px;
   z-index: 9999;
+}
+.nav .span1 > span .ul-input input {
+  border: none;
+  height: 30px;
+  margin-top: 15px;
 }
 .nav .span1 span:hover {
   border-bottom: 3px solid red;
@@ -143,7 +152,7 @@ li {
 .nav .span1 span:hover .ul-shop {
   display: block;
 }
-.nav .span1 span:hover .ul-input {
+.nav .span1 span:active .ul-input {
   display: block;
 }
 .nav .span1 a:hover {
@@ -285,6 +294,34 @@ li {
   background: #eb0028;
   color: white;
   border: none;
+  position: relative;
+}
+.main form .field .sub:after,
+.main form .field .sub:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #eb0028;
+  z-index: -2;
+}
+.main form .field .sub:hover {
+  z-index: 1;
+  background: transparent;
+}
+.main form .field .sub:before {
+  transition: 0.3s;
+  background: #830202;
+  z-index: -1;
+}
+.main form .field .sub:hover {
+  color: white;
+}
+.main form .field .sub:hover:after,
+.main form .field .sub:hover:before {
+  width: 100%;
 }
 #footer {
   z-index: 99;

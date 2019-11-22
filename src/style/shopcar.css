@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.nav {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+.nav > div {
+  float: left;
+  width: 40px;
+  padding: 10px;
+}
+.nav > ul {
+  margin: 0;
+  padding-left: 260px;
+  float: left;
+  text-align: center;
+}
+.nav > ul .list1 > a > span {
+  border-radius: 10px;
+  border: 1px solid #4d4d4d;
+  font-size: 10px;
+  padding: 1px;
+}
+.nav > ul > li {
+  height: 60px;
+  padding: 0 21px;
+  float: left;
+  line-height: 60px;
+}
+.nav > ul > li > a {
+  color: #000;
+  text-decoration: none;
+}
+.nav > ul > li .nav-li {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  height: 150px;
+  width: 100%;
+  background: white;
+  display: none;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  z-index: 999;
+}
+.nav > ul > li .nav-li .menu1 {
+  width: 800px;
+  margin: auto;
+  background: white;
+}
+.nav > ul > li .nav-li .menu1 > li {
+  padding: 0 30px;
+  float: left;
+  line-height: 160px;
+}
+.nav > ul > li .nav-li .menu1 > li > span {
+  font-size: 22px;
+}
+.nav > ul > li .nav-li .menu1 > li a {
+  color: #000;
+  text-decoration: none;
+}
+.nav > ul .list1:hover {
+  border-bottom: 3px solid red;
+}
+.nav > ul .list1:hover .nav-li {
+  display: block;
+}
+.nav .span1 {
+  float: right;
+  width: 200px;
+  height: 60px;
+  position: relative;
+}
+.nav .span1 > span {
+  float: left;
+  line-height: 45px;
+  font-size: 26px;
+  padding: 0 10px;
+}
+.nav .span1 > span > ul {
+  background: #fff;
+  display: none;
+}
+.nav .span1 > span .ul-text {
+  width: 280px;
+  height: 250px;
+  position: absolute;
+  top: 60px;
+  right: 140px;
+  padding: 20px;
+  z-index: 999;
+}
+.nav .span1 > span .ul-text li {
+  border-bottom: 1px solid #ccc;
+}
+.nav .span1 > span .ul-text li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #9999a6;
+}
+.nav .span1 > span .ul-shop {
+  width: 380px;
+  height: 200px;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  padding: 20px;
+  z-index: 999;
+}
+.nav .span1 > span .ul-shop > p {
+  font-size: 16px;
+}
+.nav .span1 > span .ul-shop button {
+  width: 360px;
+  position: absolute;
+  bottom: 10px;
+  background: #eb0028;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+.nav .span1 > span .ul-input {
+  width: 600px;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  left: 400px;
+  z-index: 9999;
+}
+.nav .span1 > span .ul-input input {
+  border: none;
+  height: 30px;
+  margin-top: 15px;
+}
+.nav .span1 span:hover {
+  border-bottom: 3px solid red;
+}
+.nav .span1 span:hover .ul-text {
+  display: block;
+}
+.nav .span1 span:hover .ul-shop {
+  display: block;
+}
+.nav .span1 span:active .ul-input {
+  display: block;
+}
+.nav .span1 a:hover {
+  color: #191020;
+}
+.bg-car {
+  background: #efefef;
+}
+.bg-car .car {
+  height: 800px;
+  width: 1200px;
+  margin: 60px auto;
+  background: white;
+}
+.bg-car .car .top-head {
+  height: 70px;
+  border-bottom: 1px solid #efefef;
+  padding: 0 30px;
+  line-height: 70px;
+}
+.bg-car .car .top-head span {
+  font-size: 18px;
+  color: #101920;
+}
+.bg-car .car .car-items {
+  height: 115px;
+  margin: 0 0 20px;
+}
+.bg-car .car .car-items .car-item {
+  position: relative;
+  margin: 20px 30px 30px;
+  padding: 0 20px;
+  border-bottom: 1px solid #efefef;
+}
+.bg-car .car .car-items .car-item .p-pic {
+  width: 84px;
+  height: 84px;
+}
+.bg-car .car .car-items .car-item .p-pic > img {
+  width: 100%;
+}
+.bg-car .car .car-items .car-item .item-main {
+  width: 880px;
+  height: 46px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  float: left;
+  background: #ccc;
+}
+.bg-car .car .car-items .car-item .item-main .p-title {
+  width: 330px;
+  height: 44px;
+  font-size: 16px;
+  padding: 10px 0 10px 10px;
+}
+.bg-car .car .car-items .car-item .item-main .p-price {
+  width: 170px;
+  height: 23px;
+  position: absolute;
+  top: 10px;
+  right: 370px;
+}
+.bg-car .car .car-items .car-item .item-main .num {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 250px;
+}
+.bg-car .car .car-items .car-item .item-main .b-price {
+  width: 170px;
+  height: 23px;
+  position: absolute;
+  top: 10px;
+  right: 68px;
+}
+.bg-car .car .car-items .car-item .item-main .tu {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.bg-car .car .car-items .car-item .item-main .tu img {
+  width: 100%;
+}

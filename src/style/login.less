@@ -210,6 +210,38 @@ li{
                 background: #eb0028;
                 color: white;
                 border: none;
+                position: relative;
+            }
+            .sub:after,.sub:before {
+                content: '';
+                position: absolute;
+                left: -1px;
+                top: 0;
+                width: 0;
+                height: 100%;
+                background: #eb0028;
+                z-index:-2;
+                // border-radius: 4px;
+            }
+
+            .sub:hover{
+                z-index:1;
+                background:transparent;
+            }            
+          
+            .sub:before {
+                transition: .3s;
+                background: rgb(131, 2, 2);
+                z-index:-1;
+               
+            }
+            .sub:hover{
+                color: white;
+            }          
+
+            .sub:hover:after,.sub:hover:before {
+                width: 100%;
+               
             }
           }
         #drag {

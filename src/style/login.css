@@ -196,6 +196,34 @@ li {
   background: #eb0028;
   color: white;
   border: none;
+  position: relative;
+}
+.main form .bot-sub .sub:after,
+.main form .bot-sub .sub:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #eb0028;
+  z-index: -2;
+}
+.main form .bot-sub .sub:hover {
+  z-index: 1;
+  background: transparent;
+}
+.main form .bot-sub .sub:before {
+  transition: 0.3s;
+  background: #830202;
+  z-index: -1;
+}
+.main form .bot-sub .sub:hover {
+  color: white;
+}
+.main form .bot-sub .sub:hover:after,
+.main form .bot-sub .sub:hover:before {
+  width: 100%;
 }
 .main form #drag {
   width: 313px;
