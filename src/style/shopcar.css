@@ -169,7 +169,7 @@ li {
 }
 .bg-car .car .top-head {
   height: 70px;
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid #ccc;
   padding: 0 30px;
   line-height: 70px;
 }
@@ -179,13 +179,13 @@ li {
 }
 .bg-car .car .car-items {
   height: 115px;
-  margin: 0 0 20px;
+  margin: 0 ;
 }
 .bg-car .car .car-items .car-item {
+  height: 115px;
   position: relative;
-  margin: 20px 30px 30px;
-  padding: 0 20px;
-  border-bottom: 1px solid #efefef;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
 }
 .bg-car .car .car-items .car-item .p-pic {
   width: 84px;
@@ -198,10 +198,9 @@ li {
   width: 880px;
   height: 46px;
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 20px;
   float: left;
-  background: #ccc;
 }
 .bg-car .car .car-items .car-item .item-main .p-title {
   width: 330px;

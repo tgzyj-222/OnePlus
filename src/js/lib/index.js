@@ -14,13 +14,13 @@ define(['jquery'], function($) {
                         let pic = JSON.parse(elm.pic);
                         // console.log(`${baseUrl}/src/html/shop.html?id=${elm.id}`);
                         temp += `
-                            <li class="item">
+                            <li class="item colo-md-3">
                                 <a href="${baseUrl}/src/html/shop.html?id=${elm.id}">
                                      <span class="p-discount">
-                                     ${elm.discount}
+                                     <p class="p-p1">${elm.discount}</p>
                                      </span>
                                     <div class="p-pic">
-                                       <img src="${baseUrl}/${pic[0].src}" alt="${pic[0].title}">
+                                       <img class="lazy" data-original="${baseUrl}/${pic[0].src}" alt="${pic[0].title}">
                                     </div>
                                     <div class="p-title">
                                         ${elm.title}
@@ -34,6 +34,8 @@ define(['jquery'], function($) {
 
                     });
                     $('.list').append(temp);
+                    $("img").lazyload({ effect: "fadeIn" });
+
                 }
             })
         }

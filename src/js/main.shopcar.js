@@ -10,8 +10,7 @@ require.config({
 
 require(['jquery', 'shopcar'], function($, shopcar) {
     shopcar.xuanran(function() {
-        $('.num').on('keyup', function() {
-            shopcar.change()
-        })
+        shopcar.change();
+        shopcar.del();
     });
 })

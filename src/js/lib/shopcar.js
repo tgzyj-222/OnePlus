@@ -30,16 +30,16 @@ define(['jquery', 'cookie'], function($, cookie) {
                                 // console.log(arr)
                             temp += `
                                 
-                                <div class="car-item">
+                                <div class="car-item" >
                                     <div class="p-pic">
                                         <img src="${baseUrl}/${pic}" alt="">
                                     </div>
-                                    <div class="item-main">
+                                    <div class="item-main" id="${elm.id}">
                                         <div class="p-title">${elm.title}</div>
-                                        <p class="p-price">￥${elm.price}</p>
+                                        <p class="p-price">￥<span>${elm.price}</span></p>
                                         <input type="number" class="num" value="1">
-                                        <p class="b-price"><span>￥${elm.price}</span></p>
-                                        <button class="tu"></button>
+                                        <p class="b-price">￥<span class="addprice">${elm.price}</span></p>
+                                        <button class="tu">×</button>
                                     </div>
                                 </div>
                             
@@ -53,18 +53,25 @@ define(['jquery', 'cookie'], function($, cookie) {
             }
         },
         change: function() {
-            console.log($('.num'))
-                // console.log(this)
-                // console.log($(this).parent().prev().children("span").text());
-            let newpri = $(this).parent().prev().children("span").text() * this.value;
-            // console.log(newpri);
-            $(this).parent().next().children("span").text(newpri.toFixed(2))
-                // console.log($(this).parent().next().children("span").text());
-            let naddpri = 0
-            $('.num').parent().next().children("span").each((i, elm) => { naddpri += ($(elm).text() * 1) })
-            console.log(naddpri.toFixed(2));
+            $('.num').on('change', function() {
+                let addprice = ($(this).val()) * ($(this).prev().children("span").text());
+                $(this).next().children("span").text(addprice.toFixed(2))
+            })
+        },
+        del: function() {
             $('.tu').on('click', function() {
-                $('.b-price').text(naddpri.toFixed(2))
+                let id = $(this).parent().attr('id');
+                let shop = JSON.parse(cookie.get('shop'));
+                console.log(shop)
+                if (shop.length > 1) {
+                    let shopp = shop.filter(elm => {
+                        return elm.id != id; //过滤返回id不与按钮相同的商品id
+                    })
+                    cookie.set("shop", JSON.stringify(shopp), 1); //重新设定cookie
+                } else {
+                    cookie.remove('shop'); //移除原有cookie
+                }
+                location.reload();
             })
         }
     }

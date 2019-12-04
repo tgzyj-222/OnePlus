@@ -247,12 +247,11 @@ li {
 #count .list .item {
   float: left;
   width: 25%;
-  height: 500px;
   overflow: hidden;
   border-top: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  padding: 35px 35px 10px;
+  padding: 35px 0px 10px;
 }
 #count .list .item > a {
   text-decoration: none;
@@ -260,31 +259,37 @@ li {
   position: relative;
 }
 #count .list .item > a .p-discount {
-  width: 40px;
+  display: block;
+  width: 303px;
   height: 20px;
-  background: red;
   color: white;
-  position: absolute;
-  right: -280px;
   text-align: center;
   font-size: 12px;
+  margin: auto;
+}
+#count .list .item > a .p-discount .p-p1 {
+  float: right;
+  width: 30px;
+  background: red;
 }
 #count .list .item > a .p-pic {
-  position: absolute;
-  top: 15px;
-  left: -40px;
+  width: 303px;
+  height: 303px;
+  margin: 0 auto;
+}
+#count .list .item > a .p-pic > img {
+  width: 100%;
 }
 #count .list .item > a .p-title {
   width: 300px;
   height: 30px;
-  position: absolute;
-  top: 380px;
+  line-height: 30px;
   text-align: center;
+  margin: 0 auto;
 }
 #count .list .item > a .p-price {
   width: 300px;
-  position: absolute;
-  bottom: -432px;
+  margin: 10px auto;
   text-align: center;
 }
 #count .list .item:hover {
